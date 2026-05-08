@@ -1,0 +1,22 @@
+<p>list-view works!</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tytuł</th>
+            <th>Wartość</th>
+            <th>Opis</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items">
+            <td>{{ item.id }}</td>
+            <td>{{ item.title }}</td>
+            <td>{{ item.value }}</td>
+            <td>{{ item.description }}</td>
+            <td>{{ item.date | date:'dd.MM.yyyy' }}</td>
+        </tr>
+    </tbody>
+</table>

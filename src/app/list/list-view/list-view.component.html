@@ -14,7 +14,7 @@
         <tr *ngFor="let item of items">
             <td>{{ item.id }}</td>
             <td>{{ item.title }}</td>
-            <td>{{ item.value }}</td>
+            <td>{{ item.value | percent }}</td>
             <td>{{ item.description }}</td>
             <td>{{ item.date | date:'dd.MM.yyyy' }}</td>
         </tr>
